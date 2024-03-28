@@ -1,0 +1,5 @@
+/* Aplica Globalmente */
+* {
+  /* Aplica Font Roboto, se nao encontrar aplica sans-serif */
+  font-family: 'Roboto', sans-serif;  
+}
