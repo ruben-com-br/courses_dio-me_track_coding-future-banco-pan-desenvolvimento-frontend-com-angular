@@ -3,3 +3,15 @@
   /* Aplica Font Roboto, se nao encontrar aplica sans-serif */
   font-family: 'Roboto', sans-serif;  
 }
+
+/*   . class   */
+/*   # id      */
+
+
+.content {
+  padding: 1rem;             /* dist borda pra fora */
+}
+
+.content h1 {
+  margin: 0;                 /* dist borda pra dentro */
+}
