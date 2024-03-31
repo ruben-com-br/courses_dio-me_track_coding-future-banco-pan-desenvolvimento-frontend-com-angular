@@ -1,0 +1,31 @@
+/* Aplica Globalmente */
+* {
+  /* Aplica Font Roboto, se nao encontrar aplica sans-serif */
+  font-family: 'Roboto', sans-serif;  
+}
+
+/*   . class   */
+/*   # id      */
+
+
+.content {
+  padding: 1rem;             /* dist borda pra fora        */
+}
+
+
+ol.pokemons {                          /* lista de pokemons                    */
+  display: grid;                       /* estilo da lista = grid = tabela      */
+  grid-template-columns: 1fr 1fr;      /* tabela 2 colunas, cada  1 fracao     */
+  list-style: none;                    /* sem estilo de lista                  */
+  padding: 0;                          /* dist bord pra fora                   */
+  margin: 0;                           /* dist bord para dentro                */
+}
+
+ol.pokemons li{                        /* pokemon da lista                     */
+  padding: 2rem 1rem;                          /* dist bord pra fora                   */
+  margin: 0.5rem;                       /* dist bord para dentro                */
+  background-color: #14A60F;         /* cor do fundo                   */
+  color: #fff;         /* cor do texto                   */
+  border-radius: 1rem;         /* arredondar bordas                   */
+  height: 100px;         /* altura                   */
+}
