@@ -2,6 +2,7 @@
 * {
   /* Aplica Font Roboto, se nao encontrar aplica sans-serif */
   font-family: 'Roboto', sans-serif;  
+  box-sizing: border-box;
 }
 
 /*   . class   */
@@ -13,7 +14,7 @@
 }
 
 
-ol.pokemons {                          /* lista de pokemons                    */
+.pokemons {                          /* lista de pokemons                    */
   display: grid;                       /* estilo da lista = grid = tabela      */
   grid-template-columns: 1fr 1fr;      /* tabela 2 colunas, cada  1 fracao     */
   list-style: none;                    /* sem estilo de lista                  */
@@ -21,11 +22,53 @@ ol.pokemons {                          /* lista de pokemons                    *
   margin: 0;                           /* dist bord para dentro                */
 }
 
-ol.pokemons li{                        /* pokemon da lista                     */
-  padding: 2rem 1rem;                          /* dist bord pra fora                   */
-  margin: 0.5rem;                       /* dist bord para dentro                */
-  background-color: #14A60F;         /* cor do fundo                   */
-  color: #fff;         /* cor do texto                   */
+.pokemon {                        /* pokemon da lista                     */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;                          /* dist bord pra fora                   */
+  margin: .5rem;                       /* dist bord para dentro                */
   border-radius: 1rem;         /* arredondar bordas                   */
-  height: 100px;         /* altura                   */
+  background-color: #49d0b0;         /* cor do fundo                   */
+  color: #fff;         /* cor do texto                   */
+}
+
+
+.pokemon .number {
+  color: #000;
+  opacity: .3;
+  text-align: right;
+  font-size: .625rem;
+}
+
+.pokemon .name {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.pokemon .detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon .detail .types {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pokemon .detail .types .type {
+  background-color: #61e1ca;
+  color: #fff;
+  padding: .25rem .5rem;
+  margin: .25rem 0;
+  font-size: .625rem;
+  border-radius: 1rem;
+
+}
+
+.pokemon .detail img{                        /* pokemon da lista                     */
+  max-width: 100%;
+  height: 70px;
 }
